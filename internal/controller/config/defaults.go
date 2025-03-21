@@ -40,7 +40,7 @@ var templateFS embed.FS
 const (
 	GrpcImage               = "GRPC_IMAGE"
 	RestImage               = "REST_IMAGE"
-	DefaultGrpcImage        = "quay.io/opendatahub/mlmd-grpc-server:latest"
+	DefaultGrpcImage        = "quay.io/pboydx/mlmd-grpc-server:latest"
 	DefaultRestImage        = "quay.io/opendatahub/model-registry:latest"
 	RouteDisabled           = "disabled"
 	RouteEnabled            = "enabled"
