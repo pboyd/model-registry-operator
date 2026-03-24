@@ -1311,5 +1311,5 @@ func (r *ModelCatalogReconciler) SetupWithManager(mgr ctrl.Manager) error {
 			"app.kubernetes.io/created-by": "model-registry-operator",
 		},
 	}}} // object identity only; it need not exist
-	return c.Watch(&source.Channel{Source: ch}, mapToFixedCatalogRequest)
+	return c.Watch(source.Channel(ch, mapToFixedCatalogRequest))
 }
